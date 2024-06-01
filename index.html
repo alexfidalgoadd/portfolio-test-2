@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>¡Hola! Soy [Tu Nombre]</h1>
+        <p>Desarrollador Web | Diseñador | Freelancer</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>[Una breve descripción sobre ti]</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <select id="category-filter">
+                <option value="all">Todas las categorías</option>
+                <option value="design">Diseño</option>
+                <option value="illustration">Ilustración</option>
+                <option value="photography">Fotografía</option>
+                <option value="video">Vídeo</option>
+            </select>
+
+            <select id="subcategory-filter">
+                <option value="all">Todas las subcategorías</option>
+                <option value="branding">Branding</option>
+                <option value="webdesign">Web Design</option>
+                <!-- Añadir más subcategorías según sea necesario -->
+            </select>
+
+            <select id="year-filter">
+                <option value="all">Todos los años</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <!-- Añadir más años según sea necesario -->
+            </select>
+
+            <input type="range" id="grid-size-slider" min="1" max="3" step="1" value="2">
+        </div>
+
+        <!-- Contenedor de Proyectos -->
+        <div id="project-grid" class="grid-size-2">
+            <div class="project" data-category="design" data-subcategory="branding" data-year="2023">
+                <h3>Proyecto de Diseño 1</h3>
+                <p>Descripción del proyecto de diseño 1.</p>
+            </div>
+            <div class="project" data-category="illustration" data-subcategory="webdesign" data-year="2022">
+                <h3>Proyecto de Ilustración 1</h3>
+                <p>Descripción del proyecto de ilustración 1.</p>
+            </div>
+            <!-- Añadir más proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
