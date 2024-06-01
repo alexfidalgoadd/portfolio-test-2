@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
 header {
@@ -39,40 +40,37 @@ section {
     text-align: center;
 }
 
-.filters {
-    margin-bottom: 2rem;
-}
-
-.filters select, .filters input[type="range"] {
-    margin: 0 10px;
-    padding: 0.5rem;
-}
-
-#project-grid {
+#project-gallery {
     display: grid;
-    gap: 1rem;
-}
-
-#project-grid.grid-size-1 {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-#project-grid.grid-size-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#project-grid.grid-size-3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .project {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    transition: transform 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
 }
 
 form {
