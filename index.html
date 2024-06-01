@@ -30,45 +30,16 @@
     <section id="projects">
         <h2>Proyectos</h2>
 
-        <!-- Filtros -->
-        <div class="filters">
-            <select id="category-filter">
-                <option value="all">Todas las categorías</option>
-                <option value="design">Diseño</option>
-                <option value="illustration">Ilustración</option>
-                <option value="photography">Fotografía</option>
-                <option value="video">Vídeo</option>
-            </select>
-
-            <select id="subcategory-filter">
-                <option value="all">Todas las subcategorías</option>
-                <option value="branding">Branding</option>
-                <option value="webdesign">Web Design</option>
-                <!-- Añadir más subcategorías según sea necesario -->
-            </select>
-
-            <select id="year-filter">
-                <option value="all">Todos los años</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <!-- Añadir más años según sea necesario -->
-            </select>
-
-            <input type="range" id="grid-size-slider" min="1" max="3" step="1" value="2">
-        </div>
-
-        <!-- Contenedor de Proyectos -->
-        <div id="project-grid" class="grid-size-2">
-            <div class="project" data-category="design" data-subcategory="branding" data-year="2023">
-                <h3>Proyecto de Diseño 1</h3>
-                <p>Descripción del proyecto de diseño 1.</p>
+        <!-- Galería de Proyectos -->
+        <div id="project-gallery">
+            <div class="project">
+                <img src="project1.jpg" alt="Proyecto 1">
+                <div class="project-info">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1.</p>
+                </div>
             </div>
-            <div class="project" data-category="illustration" data-subcategory="webdesign" data-year="2022">
-                <h3>Proyecto de Ilustración 1</h3>
-                <p>Descripción del proyecto de ilustración 1.</p>
-            </div>
-            <!-- Añadir más proyectos según sea necesario -->
+            <!-- Repite este bloque para más proyectos -->
         </div>
     </section>
 
